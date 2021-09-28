@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -34,5 +38,25 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.bird {
+  width: 150px;
+  -webkit-user-drag: none;
+  /* justify-content: center;
+  justify-self: center;
+  align-items: center;
+  align-self: center; */
+  animation: fade 6s infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
